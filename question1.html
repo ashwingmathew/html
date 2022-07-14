@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Form</title>
+	</head>
+	<body>
+		<form action="/action_page.php">
+  			<label for="name">Name</label><br>
+  				<input type="name" id="name" name="name" placeholder="Name" required size="25"><br>
+  			<label for="email">Email Address</label><br>
+  				<input type="email" id="email" name="email" value="test@example.com" required autofocus><br>
+  			<label for="pwd">Password:</label><br>
+ 				<input type="password" id="pwd" name="pwd" required minlength="6"><br>
+ 			<label for="category">Category:</label><br>
+ 				<select name="category" id="category" required>
+    				<option value="student">Student</option>
+    				<option value="employee">Employee</option>
+    				<option value="freelancer" selected>Freelancer</option>
+  				</select><br><br>
+  			<label for="date">Event Date:</label><br>
+  				<input type="date" name="date" required><br><br>
+  			<label for="ticket">Tickets:</label><br>
+  				<input type="radio" id="1" name="ticket" value="1 Ticket" required>
+  				<label for="1">1 Ticket</label><br>
+				<input type="radio" id="2" name="ticket" value="2 Tickets" checked>
+				<label for="2">2 Tickets</label><br>
+				<input type="radio" id="3" name="ticket" value="3 Tickets">
+				<label for="3">3 Tickets</label><br><br>
+			<label for="online">Payment:</label><br>	
+				<input type="checkbox" id="online" required>
+					<label for="online">Online Payment</label><br><br>
+			<label for="notes">Notes:</label><br>
+				<textarea id="notes" name="notes" rows="4" cols="50" placeholder="Notes"></textarea><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
+	
